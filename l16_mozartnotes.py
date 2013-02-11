@@ -1,7 +1,7 @@
 import PIL
 from PIL import Image
 
-im = Image.open("C:/mozart.gif")
+im = Image.open("l16/mozart.gif")
 print im.size, im.mode
 
 g = im.convert("RGB")
@@ -36,6 +36,6 @@ while globidx < len(l):
     
 print "*** total found :", len(things)
 
-f = open("C:/blocks.txt", "w")
+f = open("l16/blocks.txt", "w")
 f.writelines("\n".join(map(str, things)))
 f.close()

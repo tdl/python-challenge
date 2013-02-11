@@ -1,0 +1,4 @@
+De pass voor die zipfile is "redavni",
+"invader" achterstevoren.
+Dat krijg je bij 't oplossen van level 20 (challenge met die Content-Range en Range headers)
+tijdens een van de requests naar de server.

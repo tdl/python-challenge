@@ -27,7 +27,7 @@ moves = {
     (102, 102): lambda (x,y) : (x+dist, y+dist)
 }
 
-imseq = ImageSequence.Iterator(Image.open("C:/white.gif"))
+imseq = ImageSequence.Iterator(Image.open("l22/white.gif"))
 poss = []
 coords = []
 for im in imseq:

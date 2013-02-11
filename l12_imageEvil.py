@@ -3,7 +3,7 @@
 
 import Image ## from Pil !
 
-fImageOrig = "C:\\evil.jpg"
+fImageOrig = "l12/evil.jpg"
 
 im = Image.open(fImageOrig)
 print im.size, im.mode
@@ -33,15 +33,15 @@ for i in range(2,height,3):
 
 im0 = Image.new(im.mode, (width, height/3))
 im0.putdata(l0)
-im0.save("c:\\evil_0.jpg")
+im0.save("l12/evil_0.jpg")
 
 im1 = Image.new(im.mode, (width, height/3))
 im1.putdata(l1)
-im1.save("c:\\evil_1.jpg")
+im1.save("l12/evil_1.jpg")
 
 im2 = Image.new(im.mode, (width, height/3))
 im2.putdata(l2)
-im2.save("c:\\evil_2.jpg")
+im2.save("l12/evil_2.jpg")
 
 def getEvenOdd(lpix, width, height):
     return getPixels(lpix, width, height, 0)
@@ -64,11 +64,11 @@ l0_odd = getOddEven(l0, width, height/3)
 
 im0_even = Image.new(im.mode, (width/2, height/3))
 im0_even.putdata(l0_even)
-im0_even.save("c:\\evil_0_even.jpg")
+im0_even.save("l12/evil_0_even.jpg")
 
 im0_odd = Image.new(im.mode, (width/2, height/3))
 im0_odd.putdata(l0_odd)
-im0_odd.save("c:\\evil_0_odd.jpg")
+im0_odd.save("l12/evil_0_odd.jpg")
 
 
 l1_even = getEvenOdd(l1, width, height/3)
@@ -76,11 +76,11 @@ l1_odd = getOddEven(l1, width, height/3)
 
 im1_even = Image.new(im.mode, (width/2, height/3))
 im1_even.putdata(l1_even)
-im1_even.save("c:\\evil_1_even.jpg")
+im1_even.save("l12/evil_1_even.jpg")
 
 im1_odd = Image.new(im.mode, (width/2, height/3))
 im1_odd.putdata(l1_odd)
-im1_odd.save("c:\\evil_1_odd.jpg")
+im1_odd.save("l12/evil_1_odd.jpg")
 
 
 l2_even = getEvenOdd(l2, width, height/3)
@@ -88,11 +88,11 @@ l2_odd = getOddEven(l2, width, height/3)
 
 im2_even = Image.new(im.mode, (width/2, height/3))
 im2_even.putdata(l2_even)
-im2_even.save("c:\\evil_2_even.jpg")
+im2_even.save("l12/evil_2_even.jpg")
 
 im2_odd = Image.new(im.mode, (width/2, height/3))
 im2_odd.putdata(l2_odd)
-im2_odd.save("c:\\evil_2_odd.jpg")
+im2_odd.save("l12/evil_2_odd.jpg")
 
 
 
