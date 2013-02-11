@@ -1,0 +1,14 @@
+Vaststellingen :
+
+op ELKE lijn van de image komt er EXACT één paars blokje voor.
+
+Ideeen :
+
+1) lijnen van de image zodanig herschikken dat de X-waarden van de paarse blokjes in volgorde staan
+
+	Geeft NIET de oplossing
+	
+2) lijn van de image gewoon "roteren", zodanig dat op elke lijn het paars blokje helemaal links komt te 
+	staan.
+	
+	YES !! That's it !!

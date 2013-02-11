@@ -1,0 +1,13 @@
+Mogelijkheden om pictures te vergelijken :
+
+- optellen
+- aftrekken L-R
+- aftrekken R-L
+- aftrekken, dan absolute waarde
+- xor
+- and
+- or
+- aftrekken rood, groen 0 blauw 0
+- aftrekken groen, rood 0 blauw 0
+- aftrekken blauw, rood 0 groen 0
+- gemiddelde ((L+R)/2)

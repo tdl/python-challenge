@@ -1,0 +1,36 @@
+Python : PIL :
+
+why the hell is het zo dat als ik een ImageSequence.Iterator heb, en
+ik loop daarover met 
+
+	images = []
+	for image in seq:
+		images.append(image)
+	
+dat dan heel de images list gewoon alleen maar kopieen bevat van de allereerste image in
+de sequentie ????
+
+als je trouwens in die loop 
+
+	id(image) 
+
+opvraagt, krijgt je altijd dezelfde waarde !!
+het lijkt er dus op dat de nieuwe image steeds op hetzelfde adres wordt gezet,
+en als je dan dat adres (want dat IS die "image" var eigenlijk)
+opslaat, dan heb je nadien maar één enkele image over !!!
+
+
+m.a.w. de CORRECTE manier van processen is DIRECT als je een nieuwe image krijgt,
+daar ook iets mee doen!!
+bvb. opslaan (met image.save(filename) )
+of de data processen, of ...
+
+
+dus bvb DIT werkt wél :
+
+cnt = 0
+for image in seq:
+	image.save(filename + str(cnt))
+	cnt += 1
+	
+dan krijg je wel degelijk álle images op je schijf.	
